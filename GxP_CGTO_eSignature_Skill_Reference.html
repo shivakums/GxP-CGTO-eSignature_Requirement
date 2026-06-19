@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>GxP / CGTO / eSignature — Skill Reference Guide</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">GxP / CGTO / eSignature — Skill Reference Guide</h1>
+</header>
+<h1 id="gxp-cgto-esignature-skill-reference-guide">GxP / CGTO /
+eSignature — Skill Reference Guide</h1>
+<p><strong>Project:</strong> GxP Compliance, CGTO/ATO Integration,
+eSignature for Purchase Orders <strong>Skill Name:</strong>
+gxp-cgto-esignature-expert <strong>Location:</strong>
+<code>C:\Users\I308878\GxP-CGTO-eSignature_Requirement</code>
+<strong>Date:</strong> 2026-06-19 <strong>Version:</strong> 1.0
+<strong>Sources:</strong> GxP Handover (Lift &amp; Shift), CGTO PO
+Alignment meeting documents</p>
+<hr />
+<h2 id="what-this-is-about-three-topics-in-one">1. What This Is About —
+Three Topics in One</h2>
+<p>This skill covers three interconnected topics all affecting the
+<strong>Purchase Order</strong> in SAP S/4HANA:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Topic</th>
+<th>What It Is</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GxP</strong></td>
+<td>Life Science compliance framework requiring audit trails +
+eSignature</td>
+<td>Enablement started 2026</td>
+</tr>
+<tr>
+<td><strong>eSignature</strong></td>
+<td>Digital signature captured on PO save — linked to Change
+Document</td>
+<td>Planned 2702</td>
+</tr>
+<tr>
+<td><strong>CGTO / ATO</strong></td>
+<td>Life Science industry fields added to PO (Therapy, Study,
+Protocol)</td>
+<td>Development started 2026</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="gxp-the-compliance-context">2. GxP — The Compliance Context</h2>
+<p><strong>GxP</strong> = Good x Practice — quality standards for
+regulated Life Science industries.</p>
+<table>
+<thead>
+<tr>
+<th>Standard</th>
+<th>Authority</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21 CFR Part 11</td>
+<td>FDA (USA)</td>
+<td>Electronic records + signatures</td>
+</tr>
+<tr>
+<td>EU Annex 11</td>
+<td>EMA (Europe)</td>
+<td>Computerised systems</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What GxP requires for SAP PO:</strong> - Change Document
+tracking (who changed what, when, old/new value) - Electronic Signature
+on regulated changes - Tamper-proof audit log</p>
+<p><strong>In 2025:</strong> GxP was NOT enabled in SAP S/4HANA Cloud.
+<strong>In 2608:</strong> Change Document for PO verified working. ✓
+<strong>In 2702:</strong> eSignature integration in ME21N planned.</p>
+<hr />
+<h2 id="cgto-ato-who-and-what">3. CGTO / ATO — Who and What</h2>
+<p><strong>CGTO</strong> (Cell &amp; Gene Therapy Orchestration) →
+renamed <strong>ATO</strong> (Advanced Therapy Orchestration) in May
+2026.</p>
+<p>ATO is a <strong>hybrid product</strong> — SaaS on BTP + Life Science
+Add-on for S/4HANA Private Cloud.</p>
+<p>ATO orchestrates supply chains for:</p>
+<table>
+<thead>
+<tr>
+<th>Therapy</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cell &amp; Gene Therapy</td>
+<td>CAR-T therapy, gene editing</td>
+</tr>
+<tr>
+<td>Plasma Therapy</td>
+<td>Plasma-derived medicines</td>
+</tr>
+<tr>
+<td>Advanced Medical Devices</td>
+<td>Regulated devices</td>
+</tr>
+<tr>
+<td>Surgical Therapy</td>
+<td>Surgical supply chain</td>
+</tr>
+<tr>
+<td>Radio Ligand Therapy</td>
+<td>Isotopes for PET cancer</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Life Science Add-on</strong> (Private Cloud) = ATO + SI +
+CSAI + CSM + BRH combined.</p>
+<hr />
+<h2 id="skill-structure">4. Skill Structure</h2>
+<pre><code>GxP-CGTO-eSignature_Requirement/
+├── Claude.md                                  ← Skill definition
+│     Trigger words, architecture,
+│     work streams, key decisions,
+│     contacts, quick reference
+│
+├── repos.yaml                                 ← Source documents
+│
+└── agent/
+    ├── knowledge/
+    │   ├── architecture/
+    │   │   └── gxp-esig-architecture.md       ← Full architecture diagrams
+    │   │         BTP↔S4 integration layout
+    │   │         eSignature flow
+    │   │         CGTO field extension pattern
+    │   │         Delivery timeline
+    │   ├── domain/
+    │   │   └── gxp-domain.md                  ← GxP/CGTO/ATO domain concepts
+    │   │         Regulatory standards
+    │   │         ATO product details
+    │   │         eSignature concept
+    │   │         Integration decisions log
+    │   └── product/
+    │       └── esignature-integration.md      ← eSignature product details
+    └── codebase-index/
+        ├── codebase-overview.md               ← Object index and tech stack
+        ├── business-rules.md                  ← 6 critical rules
+        └── data-flows.md                      ← 3 integration flows</code></pre>
+<hr />
+<h2 id="architecture-overview">5. Architecture Overview</h2>
+<h3 id="two-work-streams-for-purchase-order">Two Work Streams for
+Purchase Order</h3>
+<pre><code>Work Stream 1: eSignature
+─────────────────────────
+ME21N Save
+    ↓
+Change Document ← prerequisite (done 2608 ✓)
+    ↓
+eSignature trigger (2702)
+    ↓ calls
+BTP eSignature SaaS
+    ↓
+Signature captured + linked to Change Document
+    ↓
+GxP audit trail complete
+
+Work Stream 3: CGTO / ATO Field Extension
+──────────────────────────────────────────
+EKKO / EKPO (standard — NOT modified directly)
+    │ Industry Object Extension
+    ▼
+/ATO/S4_PO_HEADER_EXT  → Therapy, Study, Protocol
+/ATO/S4_PO_ITEM_EXT    → Therapy, Patient reference
+    │
+    ▼
+OData API extension (PurchaseOrder entity)
+    │
+    ▼ Outbound events on PO change
+Event Mesh → iFlow → ATO SaaS</code></pre>
+<h3 id="full-integration-landscape">Full Integration Landscape</h3>
+<pre><code>BTP                               S/4HANA
+┌──────────────────────┐         ┌──────────────────────────────┐
+│ ATO SaaS (ATO)        │◄───────►│ EKKO + EKPO                  │
+│ eSignature Service    │ Events  │ Industry Object Extensions   │
+│ Event Mesh            │ OData   │ ME21N / ME22N                │
+│ iFlow (schema map)    │         │ Change Document              │
+└──────────────────────┘         └──────────────────────────────┘</code></pre>
+<hr />
+<h2 id="industry-object-extension-pattern">6. Industry Object Extension
+Pattern</h2>
+<p><strong>Decision:</strong> CGTO/ATO fields are NOT appended directly
+to EKKO/EKPO.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Wrong</th>
+<th>Correct</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EKKO ← append ZZTHERAPY</td>
+<td>Industry Object Extension node on EKKO</td>
+</tr>
+<tr>
+<td>Pollutes standard table</td>
+<td>Clean separation from standard</td>
+</tr>
+<tr>
+<td>Not approved for public cloud</td>
+<td>Approved by Suite Architecture (North Star)</td>
+</tr>
+</tbody>
+</table>
+<p>Extension nodes: - <code>/ATO/S4_PO_HEADER_EXT</code> — header fields
+(linked to EKKO via EBELN) - <code>/ATO/S4_PO_ITEM_EXT</code> — item
+fields (linked to EKPO via EBELN+EBELP)</p>
+<hr />
+<h2 id="key-business-rules">7. Key Business Rules</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>Rule</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>NEVER append CGTO fields directly to EKKO/EKPO</td>
+<td>North Star governance — use Industry Object Extension</td>
+</tr>
+<tr>
+<td>2</td>
+<td>eSignature REQUIRES Change Document working first</td>
+<td>eSignature attaches to Change Document</td>
+</tr>
+<tr>
+<td>3</td>
+<td>ME21N is phase 1 for eSignature — Manage PO App is deferred</td>
+<td>BOF app modernisation in progress</td>
+</tr>
+<tr>
+<td>4</td>
+<td>iFlow handles schema mapping BTP↔︎S4</td>
+<td>Different event schemas on each side</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Public cloud extensions need Suite Architecture review</td>
+<td>North Star governance (Felix Vente)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>CGTO = ATO (renamed May 2026)</td>
+<td>Expanded scope to multi-modal therapies</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="delivery-timeline">8. Delivery Timeline</h2>
+<table>
+<thead>
+<tr>
+<th>Release</th>
+<th>What Was Done</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025</td>
+<td>GxP not enabled in S/4HANA</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2602</td>
+<td>Discussions started, POCs</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>2608</td>
+<td>Change Document for PO verified</td>
+<td>✓ Done</td>
+</tr>
+<tr>
+<td>2702</td>
+<td>eSignature in ME21N + CGTO enablement</td>
+<td>Planned</td>
+</tr>
+<tr>
+<td>Future</td>
+<td>eSignature in modernised PO app</td>
+<td>Deferred</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="key-contacts">9. Key Contacts</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Name</th>
+<th>Role</th>
+<th>Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Swarnava Chatterjee</td>
+<td>eSignature main contact</td>
+<td>Work Stream 1</td>
+</tr>
+<tr>
+<td>Satish Kumar (Meenakshisundaram)</td>
+<td>ATO/CGTO PM + Architecture</td>
+<td>Work Stream 3</td>
+</tr>
+<tr>
+<td>Viswanath Natesan</td>
+<td>ATO Architecture</td>
+<td>Work Stream 3</td>
+</tr>
+<tr>
+<td>Nils Hartmann</td>
+<td>PO Product Owner</td>
+<td>Both</td>
+</tr>
+<tr>
+<td>Loring Wu</td>
+<td>ATO Development Manager</td>
+<td>Work Stream 3</td>
+</tr>
+<tr>
+<td>Felix Vente</td>
+<td>Suite Architecture — North Star</td>
+<td>Governance</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="what-makes-it-extensible">10. What Makes It Extensible</h2>
+<h3 id="adding-new-cgtoato-fields">Adding New CGTO/ATO Fields</h3>
+<ol type="1">
+<li>Add field to Industry Object Extension node (not EKKO/EKPO
+directly)</li>
+<li>Expose via OData extension of PurchaseOrder entity</li>
+<li>Add to outbound event payload for S4→BTP</li>
+</ol>
+<h3 id="adding-new-esignature-scope-new-appobject">Adding New eSignature
+Scope (new app/object)</h3>
+<ol type="1">
+<li>Confirm Change Document works for that object</li>
+<li>Add eSignature trigger point in the save flow</li>
+<li>Configure which fields require signature</li>
+</ol>
+<h3 id="adding-new-knowledge-documents">Adding New Knowledge
+Documents</h3>
+<p>Place in: - <code>agent/knowledge/domain/</code> — new domain rules,
+regulatory updates - <code>agent/knowledge/product/</code> — ATO product
+updates, eSignature updates - <code>agent/knowledge/architecture/</code>
+— new integration diagrams - Update <code>repos.yaml</code>
+source_documents list</p>
+<hr />
+<p><em>Skill created: 2026-06-19</em> <em>Sources: GxP Handover (Lift
+&amp; Shift team), CGTO PO Alignment meeting</em> <em>Skill file:
+C:-CGTO-eSignature_Requirement.md</em></p>
+</body>
+</html>

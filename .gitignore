@@ -1,0 +1,7 @@
+# Exclude large binary files that exceed GitHub's 100MB limit
+# and should not be version controlled
+Knowledge-base/**/*.mp4
+Knowledge-base/**/*.MP4
+
+# Exclude temp files
+~$*

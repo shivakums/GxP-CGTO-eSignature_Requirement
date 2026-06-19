@@ -1,0 +1,14 @@
+repos:
+  - name: GxP-CGTO-eSignature_Requirement
+    description: GxP compliance, CGTO/ATO industry integration, and eSignature for SAP Purchase Orders
+    knowledge_dirs:
+      - agent/knowledge/architecture
+      - agent/knowledge/domain
+      - agent/knowledge/product
+    codebase_index_dir: agent/codebase-index
+    artifacts_dir: agent/artifacts
+    skill_file: Claude.md
+    source_documents:
+      - Knowledge-base/GxP Handover Lift and Shift/GxP_Handover.pptx
+      - Knowledge-base/GxP Handover Lift and Shift/GxP Handover - Lift & Shift team.vtt
+      - Knowledge-base/CGTO Purchase Order Alignment/CGTO - Purchase Order alignment (1).docx
