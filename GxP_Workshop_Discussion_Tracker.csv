@@ -1,0 +1,68 @@
+GxP / CGTO / eSignature — Workshop Discussion & Open Queries Tracker,,,,,,,,
+Project: GxP Compliance | CGTO/ATO Integration | eSignature for Purchase Orders,,,,,,,,
+Date:,,Facilitator:,,Attendees:,,,,
+,,,,,,,,
+SECTION 1 — WORKSHOP DISCUSSION LOG,,,,,,,,
+#,Topic / Agenda Item,Work Stream,Discussion Summary,Decision Taken,Action Item,Owner,Due Date,Notes
+1,Change Document for PO — Status Review,eSignature (WS1),,,,,,
+2,eSignature trigger in ME21N — Design,eSignature (WS1),,,,,,
+3,eSignature scope — which PO fields require signature,eSignature (WS1),,,,,,
+4,BTP eSignature SaaS — integration approach,eSignature (WS1),,,,,,
+5,CGTO/ATO field extension — Industry Object Extension node,CGTO/ATO (WS3),,,,,,
+6,/ATO/S4_PO_HEADER_EXT fields — Therapy / Study / Protocol,CGTO/ATO (WS3),,,,,,
+7,/ATO/S4_PO_ITEM_EXT fields — Therapy / Patient Reference,CGTO/ATO (WS3),,,,,,
+8,OData API extension for PurchaseOrder entity,CGTO/ATO (WS3),,,,,,
+9,iFlow schema mapping BTP ↔ S4,CGTO/ATO (WS3),,,,,,
+10,Event Mesh outbound events on PO change,CGTO/ATO (WS3),,,,,,
+11,2702 release scope confirmation,Both,,,,,,
+12,Modernised PO app (Manage PO) — eSignature deferral,eSignature (WS1),,,,,,
+13,North Star governance — Suite Architecture review (Felix Vente),Governance,,,,,,
+14,Public cloud vs Private cloud approach,Governance,,,,,,
+15,,,,,,,,
+,,,,,,,,
+SECTION 2 — OPEN QUERIES LOG,,,,,,,,
+#,Query / Open Issue,Work Stream,Raised By,Raised Date,Response / Resolution,Responded By,Response Date,Status
+1,Will eSignature work for ME22N (change PO) or only ME21N (create PO)?,eSignature (WS1),,,,,,Open
+2,Which specific PO fields are in-scope for eSignature trigger?,eSignature (WS1),,,,,,Open
+3,How is the eSignature linked to the Change Document — is it stored in the Change Doc or a separate object?,eSignature (WS1),,,,,,Open
+4,What happens if the BTP eSignature SaaS is unavailable — does PO save fail or is it async?,eSignature (WS1),,,,,,Open
+5,Is eSignature required at Header level or Item level or both?,eSignature (WS1),,,,,,Open
+6,Confirmation that EKKO/EKPO will NOT be modified directly — Industry Object Extension approved?,CGTO/ATO (WS3),,,,,,Open
+7,Are /ATO/S4_PO_HEADER_EXT and /ATO/S4_PO_ITEM_EXT already deployed in the target system?,CGTO/ATO (WS3),,,,,,Open
+8,Which therapy types need to be supported in Phase 1 — Cell & Gene only or all 5?,CGTO/ATO (WS3),,,,,,Open
+9,How does ATO SaaS consume PO events — pull via OData or push via Event Mesh?,CGTO/ATO (WS3),,,,,,Open
+10,iFlow — who owns the schema mapping maintenance — ATO team or S4 team?,CGTO/ATO (WS3),,,,,,Open
+11,Is the CGTO to ATO rename (May 2026) reflected in all system artefact names?,CGTO/ATO (WS3),,,,,,Open
+12,Patient reference field on PO item — is this mandatory or optional in GxP context?,CGTO/ATO (WS3),,,,,,Open
+13,Regulatory requirement — 21 CFR Part 11 or EU Annex 11 or both?,Compliance,,,,,,Open
+14,Audit log — is the standard SAP Change Document sufficient for 21 CFR Part 11 or is additional logging needed?,Compliance,,,,,,Open
+15,GxP enablement in Public Cloud — what is the target release beyond 2702?,Compliance,,,,,,Open
+16,,,,,,,,Open
+17,,,,,,,,Open
+18,,,,,,,,Open
+,,,,,,,,
+SECTION 3 — DECISION LOG,,,,,,,,
+#,Decision,Work Stream,Rationale,Decided By,Date,Impact,Reference,Status
+1,CGTO/ATO fields will use Industry Object Extension — NOT direct EKKO/EKPO append,CGTO/ATO (WS3),North Star governance — clean separation from standard tables,Felix Vente (Suite Architecture),,High — all field design must follow this pattern,North Star governance,Confirmed
+2,ME21N is Phase 1 for eSignature — Manage PO App deferred,eSignature (WS1),BOF app modernisation in progress,,,,eSignature design doc,Confirmed
+3,eSignature requires Change Document as prerequisite,eSignature (WS1),eSignature attaches to Change Document,,2608,,Architecture decision,Confirmed
+4,iFlow handles schema mapping between BTP and S4,CGTO/ATO (WS3),Different event schemas on BTP vs S4 side,,,,,Confirmed
+5,,,,,,,,
+6,,,,,,,,
+,,,,,,,,
+SECTION 4 — ACTION ITEMS SUMMARY,,,,,,,,
+#,Action Item,Work Stream,Owner,Due Date,Priority,Status,Notes,
+1,Confirm eSignature field scope with Swarnava Chatterjee,eSignature (WS1),,,High,Open,,
+2,Validate /ATO/S4_PO_HEADER_EXT deployment status with Loring Wu,CGTO/ATO (WS3),,,High,Open,,
+3,Get Suite Architecture sign-off from Felix Vente for Phase 1 scope,Governance,,,High,Open,,
+4,Clarify iFlow ownership — ATO team vs S4 team,CGTO/ATO (WS3),,,Medium,Open,,
+5,Confirm 21 CFR Part 11 vs EU Annex 11 applicability with compliance team,Compliance,,,High,Open,,
+6,Document outbound event payload structure for PO change events,CGTO/ATO (WS3),,,Medium,Open,,
+7,Update CGTO → ATO rename in all system artefact names,CGTO/ATO (WS3),,,Low,Open,,
+8,,,,,,,,
+9,,,,,,,,
+10,,,,,,,,
+,,,,,,,,
+STATUS VALUES: Open | In Progress | Resolved | Deferred | Cancelled,,,,,,,,
+WORK STREAMS: eSignature (WS1) | CGTO/ATO (WS3) | Compliance | Governance | Both,,,,,,,,
+PRIORITY VALUES: High | Medium | Low,,,,,,,,
